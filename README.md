@@ -6,5 +6,5 @@ Resultado da primeira tentiva de autoshot:
 ![Alt Text](https://media.giphy.com/media/C3XrgjNPXjIq9MnocV/giphy.gif)
 
 Requisitos:
-  - Pyautogui
-  - keyboard
+  - Pyautogui (pip install pyautogui)
+  - keyboard (pip install keyboard)
