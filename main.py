@@ -1,6 +1,7 @@
 import pyautogui
 import keyboard
-
+from cliquerapido.clique import clica
+ 
 def achar_posicao_dos_ponteiros():
     '''
     Função destinada a encontrar as posição onde deve precisamos verificar a 
@@ -36,6 +37,9 @@ def main():
             for y in range(50,largura,100):
                 r,g,b = imagem.getpixel((x,y)) # Pega a cor do pixel
                 if r == 0 and g == 0 and b == 0: # Verifica se a cor do pixel é preto
-                    pyautogui.click(pontoInicial[0]+x,pontoInicial[1]+y) # Utiliza a função de clique do pyautogui para clicar no pixel preto
+                    clica(pontoInicial[0]+x,pontoInicial[1]+y) # Utilizaremos a api do windows para clicar mais rapido
+                    '''Você pode escolher entra uma das duas função de cliques,
+                    no entanto a função usando a api do windows se mostrou mais rapida nos cliques'''
+                    #pyautogui.click(pontoInicial[0]+x,pontoInicial[1]+y) # Utiliza a função de clique do pyautogui para clicar no pixel preto
 
 main()
